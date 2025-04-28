@@ -60,7 +60,7 @@ const Home = () => {
     setSearchTerm(term);
 
     const filtered = pokemons.filter((pokemon) => {
-      const matchesSearch = pokemon.name.toLowerCase().includes(term);
+      const matchesSearch = pokemon.name.toLowerCase().includes(term); // Ensure case-insensitive comparison
       const matchesType = selectedType
         ? pokemon.types.some(
             (type) => type.type.name === selectedType.toLowerCase()
@@ -78,7 +78,7 @@ const Home = () => {
     setSelectedType(type);
 
     const filtered = pokemons.filter((pokemon) => {
-      const matchesSearch = pokemon.name.toLowerCase().includes(searchTerm);
+      const matchesSearch = pokemon.name.toLowerCase().includes(searchTerm); // Ensure case-insensitive comparison
       const matchesType =
         type !== "All"
           ? pokemon.types.some(
