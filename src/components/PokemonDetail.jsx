@@ -38,7 +38,7 @@ const PokemonDetail = () => {
     return (
       <div className="flex flex-col items-center justify-center mt-20 text-center">
         <p className="text-2xl font-medium text-gray-700 mb-4">
-          No favorite Pokémon yet.
+          No Pokémon data.
         </p>
         <button
           onClick={() => navigate("/")}
